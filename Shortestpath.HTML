@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+<title>Dijkstra</title>
+
+<style>
+body {background-color: #F9CC85 ;}
+h1 {
+  color: #EA9B1D;
+  font-family: verdana;
+  font-size: 350%;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 150%;
+}
+
+pre {
+  color: #000000;
+  font-family: verdana;
+  font-size:20px;
+}
+
+ul {
+  font-size:20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 2px solid #000000;
+  text-align: middle;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #EA9B1D;
+}
+
+</style>
+</head>
+
+ <h1 id ="A1">Shortest Path Algorithm</h1>
+
+ <h2>Dijkstras:</h2>
+ <ul>
+  <li> Shortest path algorithm</li>
+  <li> Used in a weighted graph </li>
+  <li> Greedy algorithm </li>
+  <li> E.g. IP routing, GPS navigation </li>
+  <li> An example of BFS </li>
+ </ul>
+
+<pre>Greedy Algorithm - always picks the best option (optimal)
+Top Down - Top-down design involves breaking down a 
+problem into major tasks and breaking down these major 
+tasks into smaller sub-tasks </pre>
+
+<h2 id="A2">Depth and Breadth First Search</h2>
+<pre>Depth First Search (DFS) - Follows all of the nodes in a branch
+down until the bottom has been reached, it will then travel back up the
+nodes until a new branch can be explored.
+
+Breadth First Search (BFS) - Visits all adjacent nodes to the first node
+and then repeats by checking each one of those nodes neighbours.
+
+3 types of searching, Pre order, In order and Post order.When using In order
+the nodes are sorted into the correct order, E.g. alphabetical. Pre order
+travels from the top of the branch down to the bottom going left until it
+cant anymore, it then backtracks until it can go right. This repeats for each
+branch. Post order works the same as pre order however it starts at the
+bottom of each branch and works its way up.
+</pre>
+
+<img src="Example.png" width="400" height="200">
+
+<p></p>
+
+<h2 id="A4">Heuristic rules</h2>
+
+ <pre style="color: #F26716">Heuristics are shortcuts used in A* algorithm that deliver quicker decisions than 
+traditional methodswhen problem-solving in computing and else where. It uses 
+concepts like 'rules of thumb' and 'educated guesses' to act as a guideline to 
+find a solution faster than traditional methods and prioritises speed not 
+accuracy. By doing this it makes the algorithm more efficient. Must not be an 
+over estimate as this will affect the output.
+
+It works by gathering data over time to make admissable estimates based on 
+that data it collected for the shortest path, its faster but because its 
+estimating it might not be accurate. 
+
+Admissable estimate - makes conservative estimates (do not over estimate)
+Fringe/ frontier - is the area in which the heuristics covers
+Tracktable problems - problems that are anything less then factoral or exponential
+heuritsics are used to solve intracktable problems
+
+static - analysing code
+dynamic - analysing behaviour
+
+Examples:
+-Machine learning
+-Networking
+-Optimisation problems
+-Anti Virus software -> (static - analysing code) (dynamic - analysing behaviour)
+</pre>
+
+<pre>
+Manhattan distance - based on a grid formation, its the sum of the horizontal and vertical components
+or as the crow flies using hypotenuse
+
+</pre>
+<img src="manhattan.jpg" width="250" height="200">
+
+<h2>Features of a Problem</h2>
+<h3>Limiting factors of a problem as to if its computable:</h3>
+<ul>
+<li>Hardware (Memory)</li>
+<li>Processing speed</li>
+<li>If the problem is exponential</li>
+</ul>
+
+<pre>
+tracktable - any problem that can be solved in polynomial time or better
+intracktable - any problem that cant be solved whithin a reasonable time frame
+heuristics can be used to subsititue the answer to a tracktable problem with
+one that is 'good enough'
+
+enumertion - algorithm that expolers every possible solution until the correct one is found
+theoretical -
+</pre>
+
+ <table>
+  <tr>
+    <th> Benefits </th>
+    <th> Drawbacks </th>
+  </tr>
+
+  <tr>
+   <td> Save time as doesnt explore all solutions </td>
+   <td> Carful considerations are required between accuracy and time </td>
+  </tr>
+
+  <tr>
+   <td> Usually find a solution close to the best </td>
+   <td> Doesnt garantee the best solution</td>
+  </tr>
+
+  <tr>
+   <td> Very practical </td>
+   <td> Heuristic values may be incorrect </td>
+  </tr>
+
+  <tr>
+   <td> Easily implemented</td>
+   <td> Errors can easily be carried forward </td>
+  </tr>
+ </table>
+
+ <hr>
+ <a href="#A1">Jump to the start</a>
+ <p></p>
+ <a href="#A2">DFS and BFS</a>
+ <p></p>
+ <a href="#A4">Heuristic rules</a>
+ <p></p>
+ <a href="https://www.savemyexams.com/a-level/computer-science/ocr/17/revision-notes/8-algorithms/8-1-algorithms/dijkstras-shortest-path-algorithm/">More information</a>
+ <p></p>
+ <a href="file:///C:/Users/23245606/OneDrive%20-%20Shrewsbury%20Colleges%20Group/Ollie/Computer%20Science/web%20pages/Contents/contents.html">Return to Contents</a>
+ <p></p>
+
+</html>
